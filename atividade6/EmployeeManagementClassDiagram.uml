@@ -1,0 +1,30 @@
+Pessoa
+----------
+- nome: String
+- idade: int
+----------
++ getNome(): String
++ setNome(nome: String)
++ getIdade(): int
++ setIdade(idade: int)
+
+Funcionario
+----------
+- idFuncionario: int
+- salario: double
+----------
++ getIdFuncionario(): int
++ setIdFuncionario(idFuncionario: int)
++ getSalario(): double
++ setSalario(salario: double)
+
+Gerente
+----------
+- subordinados: List<Funcionario>
+----------
++ adicionarSubordinado(funcionario: Funcionario)
++ removerSubordinado(funcionario: Funcionario)
++ getSubordinados(): List<Funcionario>
+
+Funcionario -->|> Pessoa
+Gerente -->|> Funcionario
